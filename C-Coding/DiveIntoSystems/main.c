@@ -54,7 +54,7 @@ int main(void) {
     } */
     
 
-    int num1, num2;
+/*     int num1, num2; */
 
     /* printf("Enter a number: ");
     scanf("%d", &num1);
@@ -64,13 +64,42 @@ int main(void) {
         num1 = num1 + 1;
     } */
 
-    printf("Choose a number: ");
+ /*    printf("Choose a number: ");
     scanf("%d", &num2);
 
     for (num1 = 0; num1 < num2; num1++) {
         printf("%d\n", num1);
-    }
+    } */
 
+        /* int i, j;
+
+        for (i=0, j=0; i < 10; i+=1, j+=10) {
+            printf("i+j = %d\n", i+j);
+        } */
+
+        int numCompare (int y, int x) {
+            int z;
+            if (y < x)  {
+                z = x;
+            } else {
+                z = y;
+            }
+            return z;
+        }
+
+        int compareResult = numCompare(4, 6);
+
+        printf("%d is the larger number!", compareResult);
+
+        void print_table(int start, int stop) {
+            int i;
+
+            for (i = start; i<= stop; i++) {
+                printf("%d\t", i*i);
+            } printf("\n");
+        }
+
+        print_table(1, 14);
 
     return 0;
 } 
