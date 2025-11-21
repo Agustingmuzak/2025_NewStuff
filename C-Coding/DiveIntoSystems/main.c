@@ -77,7 +77,7 @@ int main(void) {
             printf("i+j = %d\n", i+j);
         } */
 
-        int numCompare (int y, int x) {
+/*         int numCompare (int y, int x) {
             int z;
             if (y < x)  {
                 z = x;
@@ -99,7 +99,23 @@ int main(void) {
             } printf("\n");
         }
 
-        print_table(1, 14);
+        print_table(1, 14); */
+
+        int comparator(void) {
+            int x, y, bigger;
+
+            printf("Enter two numbers: \n");
+            scanf("%d%d", &x, &y);
+
+            if (x > y) {
+                bigger = x;
+            } bigger = y;
+
+            return bigger;
+        }
+
+        int result = comparator();
+        printf("%d is the bigger number", result);
 
     return 0;
 } 
