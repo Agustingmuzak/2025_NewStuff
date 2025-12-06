@@ -1,0 +1,7 @@
+def order_tea(customer_name: str, tea_type: str, *args: str):
+
+    print("{} ordered: {}\n\nExtras: ".format(customer_name, tea_type))
+    for arg in args:
+        print("- {}".format(arg))
+
+order_tea('Sapopeda', 'Black tea', 'Honey', 'Oats')
